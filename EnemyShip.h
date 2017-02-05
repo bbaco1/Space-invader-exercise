@@ -1,5 +1,5 @@
 //
-//  BaseShip.m
+//  EnemyShip.h
 //  Space Invaders
 //
 //  Created by Anton Orzes on 05/02/2017.
@@ -8,6 +8,8 @@
 
 #import "BaseShip.h"
 
-@implementation BaseShip
+@interface EnemyShip : BaseShip
+
+- (id)initWithPosition:(CGPoint)position;
 
 @end

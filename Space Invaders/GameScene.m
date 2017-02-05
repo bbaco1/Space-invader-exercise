@@ -7,7 +7,7 @@
 //
 
 #import "GameScene.h"
-#import "BaseShip.h"
+#import "EnemyShip.h"
 
 @implementation GameScene
 -(void)didMoveToView:(SKView *)view {
@@ -22,11 +22,14 @@
 }
 
 -(void)addEnemyShips {
-    
-    BaseShip *enemy = [[BaseShip alloc]initWithPosition:CGPointMake(0, 100)];
-    [self addChild:enemy];
+    CGFloat width = self.size.width/2;
+    for(CGFloat y = 100; y>-100; y-=80) {
+        for(int x = -width + 10; x<width-10; x+= 80) {
+            EnemyShip *enemy = [[EnemyShip alloc]initWithPosition:CGPointMake(x, y)];
+            [self addChild:enemy];
+        }
+    }
  
-
 }
 
 @end
