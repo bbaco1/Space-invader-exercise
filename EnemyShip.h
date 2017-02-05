@@ -10,6 +10,4 @@
 
 @interface EnemyShip : BaseShip
 
-- (id)initWithPosition:(CGPoint)position;
-
 @end

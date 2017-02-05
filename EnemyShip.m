@@ -9,8 +9,7 @@
 #import "EnemyShip.h"
 
 @implementation EnemyShip
-- (id)initWithPosition:(CGPoint)position
-{
+- (id)initWithPosition:(CGPoint)position {
     self = [super init];
     if (self) {
         self.position = position;

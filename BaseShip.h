@@ -10,4 +10,6 @@
 
 @interface BaseShip : SKSpriteNode
 
+- (id)initWithPosition:(CGPoint)position;
+
 @end

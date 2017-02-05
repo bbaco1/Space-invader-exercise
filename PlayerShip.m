@@ -10,16 +10,17 @@
 
 @implementation PlayerShip
 
-- (instancetype)initWithPosition:(CGPoint)position {
+- (id)initWithPosition:(CGPoint)position {
     self = [super init];
     if (self) {
         self.size = CGSizeMake(50, 50);
         self.position = position;
-        
-        UIImage *shipImage = [UIImage imageNamed:@"tanjur"];
+        self.zPosition = 1;
+        UIImage *shipImage = [UIImage imageNamed:@"SpaceShip"];
         [self setTexture:[SKTexture textureWithImage:shipImage]];
     }
     return self;
 }
+
 
 @end

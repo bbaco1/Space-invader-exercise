@@ -7,7 +7,7 @@
 //
 
 #import "GameScene.h"
-#import "BaseShip.h"
+#import "EnemyShip.h"
 #import "PlayerShip.h"
 
 @implementation GameScene
@@ -23,13 +23,17 @@
 }
 
 - (void)addEnemyShips {
-    BaseShip *enemy = [[BaseShip alloc]initWithPosition:CGPointMake(0, 100)];
-    [self addChild:enemy];
+    CGFloat width = self.size.width/2;
+    for(CGFloat y = 100; y>-100; y-=80) {
+        for(int x = -width + 10; x<width-10; x+= 80) {
+            EnemyShip *enemy = [[EnemyShip alloc] initWithPosition:CGPointMake(x, y)];
+            [self addChild:enemy];
+        }
+    }
 }
 
 - (void)addPlayerShip {
-    PlayerShip *player = [[PlayerShip alloc] initWithPosition:CGPointMake(10, -100)];
-    
-    [self addChild:player];
+    PlayerShip *playerShip = [[PlayerShip alloc] initWithPosition:CGPointMake(0, -250)];
+    [self addChild:playerShip];
 }
 @end
