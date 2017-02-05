@@ -15,7 +15,7 @@
     if (self) {
         self.size = CGSizeMake(50, 50);
         self.position = position;
-        UIImage *shipImage = [UIImage imageNamed:@"SpaceShip"];
+        UIImage *shipImage = [UIImage imageNamed:@"MaliSbGo"];
         [self setTexture:[SKTexture textureWithImage:shipImage]];
     }
     return self;
