@@ -15,7 +15,7 @@
     background.position = CGPointMake(0, 0);
     background.size = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+20);
     background.zPosition=0;
-    [self addChild:podloga];
+    [self addChild:background];
     
 }
 
