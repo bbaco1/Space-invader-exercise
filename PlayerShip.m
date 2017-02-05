@@ -11,7 +11,7 @@
 @implementation PlayerShip
 
 - (id)initWithPosition:(CGPoint)position {
-    self = [super init];
+    self = [super initWithPosition:position];
     if (self) {
         self.size = CGSizeMake(50, 50);
         self.position = position;
@@ -20,6 +20,5 @@
     }
     return self;
 }
-
 
 @end
