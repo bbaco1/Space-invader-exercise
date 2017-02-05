@@ -22,6 +22,7 @@
 }
 
 -(void)addEnemyShips {
+    
     BaseShip *enemy = [[BaseShip alloc]initWithPosition:CGPointMake(0, 100)];
     [self addChild:enemy];
  
