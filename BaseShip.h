@@ -11,6 +11,6 @@
 @interface BaseShip : SKSpriteNode
 
 - (id)initWithPosition:(CGPoint)position;
-
+- (void)destroyed;
 
 @end
