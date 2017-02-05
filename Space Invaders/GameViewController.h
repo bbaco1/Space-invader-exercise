@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 #import "PlayerShip.h"
+#import "BaseViewController.h"
 
-@interface GameViewController : UIViewController
-
-
+@interface GameViewController : BaseViewController
 
 @end

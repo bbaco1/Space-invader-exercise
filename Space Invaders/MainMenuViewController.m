@@ -14,8 +14,4 @@
 
 @implementation MainMenuViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 @end
