@@ -10,14 +10,13 @@
 
 @implementation BaseShip
 
-- (id)initWithPosition:(CGPoint)position
-{
+- (id)initWithPosition:(CGPoint)position {
     self = [super init];
     if (self) {
-        self.position = position;
-        self.size = CGSizeMake(50, 25);
-        self.texture = [SKTexture textureWithImageNamed:@"tanjur"];
-            
+//        self.position = position;
+//        self.size = CGSizeMake(50, 25);
+//        self.texture = [SKTexture textureWithImageNamed:@"tanjur"];
+        
     }
     return self;
 }

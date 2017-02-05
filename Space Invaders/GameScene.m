@@ -8,24 +8,28 @@
 
 #import "GameScene.h"
 #import "BaseShip.h"
+#import "PlayerShip.h"
 
 @implementation GameScene
--(void)didMoveToView:(SKView *)view {
-    
+
+- (void)didMoveToView:(SKView *)view {
     SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"svemir1"];
     background.position = CGPointMake(0, 0);
     background.size = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+20);
     background.zPosition=0;
     [self addChild:background];
     [self addEnemyShips];
-    
+    [self addPlayerShip];
 }
 
--(void)addEnemyShips {
+- (void)addEnemyShips {
     BaseShip *enemy = [[BaseShip alloc]initWithPosition:CGPointMake(0, 100)];
     [self addChild:enemy];
- 
-
 }
 
+- (void)addPlayerShip {
+    PlayerShip *player = [[PlayerShip alloc] initWithPosition:CGPointMake(10, -100)];
+    
+    [self addChild:player];
+}
 @end
