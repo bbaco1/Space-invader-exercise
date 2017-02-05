@@ -16,7 +16,7 @@
     SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"svemir1"];
     background.position = CGPointMake(0, 0);
     background.size = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+20);
-    background.zPosition=0;
+    background.zPosition = 0;
     [self addChild:background];
     [self addEnemyShips];
     [self addPlayerShip];
