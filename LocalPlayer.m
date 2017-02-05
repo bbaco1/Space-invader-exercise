@@ -11,7 +11,7 @@
 
 @implementation LocalPlayer
 
-+ (instancetype)sharedUser {
++ (instancetype)sharedPlayer {
     static dispatch_once_t token;
     static LocalPlayer *localPlayer = nil;
     
