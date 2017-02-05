@@ -7,9 +7,12 @@
 //
 
 #import "GameViewController.h"
+#import "GameScene.h"
 
 @interface GameViewController ()
-
+{
+     SKScene *gameScene;
+}
 @end
 
 @implementation GameViewController
@@ -17,7 +20,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    PlayerShip *playerShip = [[PlayerShip alloc] init];
+    SKView * skView = (SKView *)self.view;
+    skView.showsFPS = YES;
+    skView.showsNodeCount = YES;
+    /* Sprite Kit applies additional optimizations to improve rendering performance */
+    skView.ignoresSiblingOrder = YES;
+    // Create and configure the scene.
+    gameScene = [GameScene nodeWithFileNamed:@"MyScene"];
+    gameScene.scaleMode = SKSceneScaleModeAspectFill;
+    //ovo treba za velicinu
+    gameScene.size=skView.bounds.size;
+    // Present the scene.
+    [skView presentScene:gameScene];
     
 }
 

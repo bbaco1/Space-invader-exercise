@@ -22,6 +22,9 @@
 		AC0EB65B1E47696A001C54BD /* PlayerShip.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB65A1E47696A001C54BD /* PlayerShip.m */; };
 		AC0EB65E1E476A5E001C54BD /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB65D1E476A5E001C54BD /* Bullet.m */; };
 		AC0EB6641E47850B001C54BD /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB6631E47850B001C54BD /* GameView.m */; };
+		EC0806231E47962C00751355 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0806221E47962C00751355 /* GameScene.m */; };
+		EC0806251E4797F300751355 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC0806241E4797F300751355 /* MyScene.sks */; };
+		EC0806271E47996800751355 /* svemir1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0806261E47996800751355 /* svemir1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,10 @@
 		AC0EB65D1E476A5E001C54BD /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
 		AC0EB6621E47850B001C54BD /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		AC0EB6631E47850B001C54BD /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		EC0806211E47962C00751355 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		EC0806221E47962C00751355 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		EC0806241E4797F300751355 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
+		EC0806261E47996800751355 /* svemir1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = svemir1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +76,7 @@
 		AC0EB6221E4761C4001C54BD = {
 			isa = PBXGroup;
 			children = (
+				EC0806261E47996800751355 /* svemir1.png */,
 				AC0EB62D1E4761C4001C54BD /* Space Invaders */,
 				AC0EB62C1E4761C4001C54BD /* Products */,
 				AC0EB64F1E4768A2001C54BD /* Frameworks */,
@@ -119,6 +127,9 @@
 				AC0EB6471E4765A1001C54BD /* MainMenuViewController.m */,
 				AC0EB64C1E476873001C54BD /* GameViewController.h */,
 				AC0EB64D1E476873001C54BD /* GameViewController.m */,
+				EC0806241E4797F300751355 /* MyScene.sks */,
+				EC0806211E47962C00751355 /* GameScene.h */,
+				EC0806221E47962C00751355 /* GameScene.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -215,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0EB63E1E4761C4001C54BD /* LaunchScreen.storyboard in Resources */,
+				EC0806271E47996800751355 /* svemir1.png in Resources */,
 				AC0EB63B1E4761C4001C54BD /* Assets.xcassets in Resources */,
+				EC0806251E4797F300751355 /* MyScene.sks in Resources */,
 				AC0EB6391E4761C4001C54BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +250,7 @@
 				AC0EB6641E47850B001C54BD /* GameView.m in Sources */,
 				AC0EB64E1E476873001C54BD /* GameViewController.m in Sources */,
 				AC0EB64B1E476796001C54BD /* BaseNavigationController.m in Sources */,
+				EC0806231E47962C00751355 /* GameScene.m in Sources */,
 				AC0EB6541E4768D1001C54BD /* LocalPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +408,7 @@
 				AC0EB6441E4761C4001C54BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

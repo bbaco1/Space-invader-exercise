@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) NSNumber *highScore;
 
-+ (instancetype)localUser;
++ (instancetype)sharedPlayer;
 - (void)saveUserData;
 
 @end
