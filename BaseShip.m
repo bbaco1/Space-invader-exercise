@@ -10,10 +10,14 @@
 
 @implementation BaseShip
 
-- (instancetype)init {
+- (id)initWithPosition:(CGPoint)position
+{
     self = [super init];
     if (self) {
-        [self setTexture:[SKTexture textureWithImage:[UIImage imageNamed:@"Ship"]]];
+        self.position = position;
+        self.size = CGSizeMake(50, 25);
+        self.texture = [SKTexture textureWithImageNamed:@"tanjur"];
+            
     }
     return self;
 }

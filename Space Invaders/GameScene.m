@@ -7,6 +7,7 @@
 //
 
 #import "GameScene.h"
+#import "BaseShip.h"
 
 @implementation GameScene
 -(void)didMoveToView:(SKView *)view {
@@ -16,7 +17,15 @@
     background.size = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+20);
     background.zPosition=0;
     [self addChild:background];
+    [self addEnemyShips];
     
+}
+
+-(void)addEnemyShips {
+    BaseShip *enemy = [[BaseShip alloc]initWithPosition:CGPointMake(0, 100)];
+    [self addChild:enemy];
+ 
+
 }
 
 @end

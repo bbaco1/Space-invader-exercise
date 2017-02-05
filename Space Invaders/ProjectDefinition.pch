@@ -1,0 +1,18 @@
+//
+//  ProjectDefinition.pch
+//  Space Invaders
+//
+//  Created by Anton Orzes on 05/02/2017.
+//  Copyright © 2017 Milorad Orzes. All rights reserved.
+//
+#import "LocalPlayer.h"
+#import "BaseViewController.h"
+
+
+#ifndef ProjectDefinition_pch
+#define ProjectDefinition_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ProjectDefinition_pch */

@@ -24,7 +24,6 @@
 		AC0EB6641E47850B001C54BD /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB6631E47850B001C54BD /* GameView.m */; };
 		EC0806231E47962C00751355 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0806221E47962C00751355 /* GameScene.m */; };
 		EC0806251E4797F300751355 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC0806241E4797F300751355 /* MyScene.sks */; };
-		EC0806271E47996800751355 /* svemir1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0806261E47996800751355 /* svemir1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +57,7 @@
 		EC0806211E47962C00751355 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		EC0806221E47962C00751355 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		EC0806241E4797F300751355 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
-		EC0806261E47996800751355 /* svemir1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = svemir1.png; sourceTree = "<group>"; };
+		EC0806281E479CB800751355 /* ProjectDefinition.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectDefinition.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +75,6 @@
 		AC0EB6221E4761C4001C54BD = {
 			isa = PBXGroup;
 			children = (
-				EC0806261E47996800751355 /* svemir1.png */,
 				AC0EB62D1E4761C4001C54BD /* Space Invaders */,
 				AC0EB62C1E4761C4001C54BD /* Products */,
 				AC0EB64F1E4768A2001C54BD /* Frameworks */,
@@ -112,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				AC0EB62F1E4761C4001C54BD /* main.m */,
+				EC0806281E479CB800751355 /* ProjectDefinition.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -226,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0EB63E1E4761C4001C54BD /* LaunchScreen.storyboard in Resources */,
-				EC0806271E47996800751355 /* svemir1.png in Resources */,
 				AC0EB63B1E4761C4001C54BD /* Assets.xcassets in Resources */,
 				EC0806251E4797F300751355 /* MyScene.sks in Resources */,
 				AC0EB6391E4761C4001C54BD /* Main.storyboard in Resources */,

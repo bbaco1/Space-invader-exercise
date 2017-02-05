@@ -9,5 +9,5 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface BaseShip : SKSpriteNode
-
+- (id)initWithPosition:(CGPoint)position;
 @end
