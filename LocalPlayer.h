@@ -10,10 +10,9 @@
 
 @interface LocalPlayer : NSObject
 
-+ (instancetype)localUser;
-
 @property (strong, nonatomic) NSNumber *highScore;
 
++ (instancetype)localUser;
 - (void)saveUserData;
 
 @end
