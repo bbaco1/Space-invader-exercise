@@ -75,6 +75,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8IY-AK-Y9r"/>
+                    <connections>
+                        <outlet property="highScoreLabel" destination="P7x-px-GnF" id="L9w-3b-4eJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

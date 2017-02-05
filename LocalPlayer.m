@@ -25,6 +25,9 @@
     self = [super init];
     if (self) {
         self.highScore = [[NSUserDefaults standardUserDefaults] objectForKey:kSavedPlayerData];
+        if (!self.highScore) {
+            self.highScore = @(0);
+        }
     }
     return self;
 }
