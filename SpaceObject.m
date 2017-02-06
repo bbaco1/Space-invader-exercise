@@ -11,6 +11,7 @@
 @implementation SpaceObject
 
 - (void)destroy {
+    
     [self removeFromParent];
 }
 
