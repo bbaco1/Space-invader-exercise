@@ -10,6 +10,7 @@
 #import "EnemyShip.h"
 
 
+
 @implementation GameScene
 
 - (void)didMoveToView:(SKView *)view {
@@ -39,14 +40,12 @@
 }
 
 - (void)didBeginContact:(SKPhysicsContact *)contact {
-    SKNode *node1 = contact.bodyA.node;
-    SKNode *node2 = contact.bodyB.node;
+    Bullet *node1 = (Bullet *) contact.bodyA.node;
+    Bullet *node2 = (Bullet *) contact.bodyB.node;
     if([node1.name isEqualToString:@"bullet"]) {
-        [node1 removeFromParent];
-        node1 = nil;
+        [node1 destroy];
     } else if([node2.name isEqualToString:@"bullet"]) {
-        [node2 removeFromParent];
-        node2 = nil;
+        [node2 destroy];
     }
 }
 

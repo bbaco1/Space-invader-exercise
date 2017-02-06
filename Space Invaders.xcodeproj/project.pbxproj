@@ -26,6 +26,7 @@
 		EC0806251E4797F300751355 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC0806241E4797F300751355 /* MyScene.sks */; };
 		EC08062B1E47A76500751355 /* EnemyShip.m in Sources */ = {isa = PBXBuildFile; fileRef = EC08062A1E47A76500751355 /* EnemyShip.m */; };
 		EC0806301E47A95300751355 /* BaseShip.m in Sources */ = {isa = PBXBuildFile; fileRef = EC08062F1E47A95300751355 /* BaseShip.m */; };
+		EC200DF61E4917E000FD43CF /* Explosion.m in Sources */ = {isa = PBXBuildFile; fileRef = EC200DF51E4917E000FD43CF /* Explosion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		EC08062A1E47A76500751355 /* EnemyShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyShip.m; sourceTree = "<group>"; };
 		EC08062E1E47A95300751355 /* BaseShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseShip.h; sourceTree = "<group>"; };
 		EC08062F1E47A95300751355 /* BaseShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseShip.m; sourceTree = "<group>"; };
+		EC200DF41E4917E000FD43CF /* Explosion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Explosion.h; sourceTree = "<group>"; };
+		EC200DF51E4917E000FD43CF /* Explosion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Explosion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				AC0EB65A1E47696A001C54BD /* PlayerShip.m */,
 				AC0EB65C1E476A5E001C54BD /* Bullet.h */,
 				AC0EB65D1E476A5E001C54BD /* Bullet.m */,
+				EC200DF41E4917E000FD43CF /* Explosion.h */,
+				EC200DF51E4917E000FD43CF /* Explosion.m */,
 			);
 			name = Models;
 			path = ..;
@@ -255,6 +260,7 @@
 				AC0EB6331E4761C4001C54BD /* AppDelegate.m in Sources */,
 				ACFC9D101E4900D40063B8DB /* SpaceObject.m in Sources */,
 				AC0EB6301E4761C4001C54BD /* main.m in Sources */,
+				EC200DF61E4917E000FD43CF /* Explosion.m in Sources */,
 				EC08062B1E47A76500751355 /* EnemyShip.m in Sources */,
 				AC0EB65E1E476A5E001C54BD /* Bullet.m in Sources */,
 				AC0EB6641E47850B001C54BD /* GameView.m in Sources */,
