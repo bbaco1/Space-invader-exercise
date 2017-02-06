@@ -8,7 +8,7 @@
 
 #import "GameScene.h"
 #import "EnemyShip.h"
-#import "PlayerShip.h"
+
 
 @implementation GameScene
 
@@ -34,8 +34,8 @@
 }
 
 - (void)addPlayerShip {
-    PlayerShip *playerShip = [[PlayerShip alloc] initWithPosition:CGPointMake(0, -250)];
-    [self addChild:playerShip];
+    self.playerShip = [[PlayerShip alloc] initWithPosition:CGPointMake(0, -250)];
+    [self addChild:self.playerShip];
 }
 
 - (void)didBeginContact:(SKPhysicsContact *)contact {
@@ -48,7 +48,28 @@
         [node2 removeFromParent];
         node2 = nil;
     }
-
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint touchLocation = [touch locationInNode:self];
+    if (touchLocation.x < 0) {
+        [self moveObject:self.playerShip side:MoveLeft];
+    } else {
+        [self moveObject:self.playerShip side:MoveRight];
+    }
+}
+
+- (void)moveObject:(SKSpriteNode *)object side:(SideMovement)side {
+    CGFloat pointX;
+    if (side == MoveLeft) {
+        pointX = object.position.x - 10;
+    } else if (side == MoveRight) {
+        pointX = object.position.x + 10;
+    }
+    SKAction *moveAction = [SKAction moveToX:pointX duration:0.1];
+    [object runAction:moveAction];
+}
+
 
 @end
