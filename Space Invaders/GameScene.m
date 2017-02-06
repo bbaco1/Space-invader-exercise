@@ -8,6 +8,7 @@
 
 #import "GameScene.h"
 #import "EnemyShip.h"
+#import "Explosion.h"
 
 
 
@@ -15,6 +16,7 @@
 
 - (void)didMoveToView:(SKView *)view {
     self.physicsWorld.contactDelegate = self;
+    self.physicsWorld.gravity = CGVectorMake(0, -2.0);
     SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"svemir1"];
     background.position = CGPointMake(0, 0);
     background.size = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+20);
@@ -44,8 +46,11 @@
     Bullet *node2 = (Bullet *) contact.bodyB.node;
     if([node1.name isEqualToString:@"bullet"]) {
         [node1 destroy];
+        [Explosion initWithPosition:contact.contactPoint secene:self];
+        
     } else if([node2.name isEqualToString:@"bullet"]) {
         [node2 destroy];
+        [Explosion initWithPosition:contact.contactPoint secene:self];
     }
 }
 

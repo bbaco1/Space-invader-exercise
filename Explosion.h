@@ -11,4 +11,6 @@
 
 @interface Explosion : NSObject
 
++ (id)initWithPosition:(CGPoint)position secene:(SKScene *)scene;
+
 @end
