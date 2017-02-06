@@ -13,6 +13,7 @@
 @implementation GameScene
 
 - (void)didMoveToView:(SKView *)view {
+    self.physicsWorld.contactDelegate = self;
     SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"svemir1"];
     background.position = CGPointMake(0, 0);
     background.size = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+20);
@@ -36,4 +37,18 @@
     PlayerShip *playerShip = [[PlayerShip alloc] initWithPosition:CGPointMake(0, -250)];
     [self addChild:playerShip];
 }
+
+- (void)didBeginContact:(SKPhysicsContact *)contact {
+    SKNode *node1 = contact.bodyA.node;
+    SKNode *node2 = contact.bodyB.node;
+    if([node1.name isEqualToString:@"bullet"]) {
+        [node1 removeFromParent];
+        node1 = nil;
+    } else if([node2.name isEqualToString:@"bullet"]) {
+        [node2 removeFromParent];
+        node2 = nil;
+    }
+
+}
+
 @end

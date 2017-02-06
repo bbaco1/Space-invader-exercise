@@ -7,6 +7,7 @@
 //
 
 #import "PlayerShip.h"
+#import "Bullet.h"
 
 @implementation PlayerShip
 
@@ -17,8 +18,12 @@
         self.position = position;
         UIImage *shipImage = [UIImage imageNamed:@"MaliSbGo"];
         [self setTexture:[SKTexture textureWithImage:shipImage]];
+        self.userInteractionEnabled = YES;
     }
     return self;
 }
-
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    Bullet *bull = [[Bullet alloc]initWithPosition:self.position];
+    [self.parent.scene addChild:bull];
+}
 @end
