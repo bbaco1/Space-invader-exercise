@@ -57,7 +57,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint touchLocation = [touch locationInNode:self];
-    if (touchLocation.x < 0) {
+    if (touchLocation.x < self.playerShip.position.x) {
         [self moveObject:self.playerShip side:MoveLeft];
     } else {
         [self moveObject:self.playerShip side:MoveRight];
