@@ -21,6 +21,7 @@
 		AC0EB65B1E47696A001C54BD /* PlayerShip.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB65A1E47696A001C54BD /* PlayerShip.m */; };
 		AC0EB65E1E476A5E001C54BD /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB65D1E476A5E001C54BD /* Bullet.m */; };
 		AC0EB6641E47850B001C54BD /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB6631E47850B001C54BD /* GameView.m */; };
+		ACFC9D101E4900D40063B8DB /* SpaceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFC9D0F1E4900D40063B8DB /* SpaceObject.m */; };
 		EC0806231E47962C00751355 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0806221E47962C00751355 /* GameScene.m */; };
 		EC0806251E4797F300751355 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC0806241E4797F300751355 /* MyScene.sks */; };
 		EC08062B1E47A76500751355 /* EnemyShip.m in Sources */ = {isa = PBXBuildFile; fileRef = EC08062A1E47A76500751355 /* EnemyShip.m */; };
@@ -53,6 +54,8 @@
 		AC0EB65D1E476A5E001C54BD /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
 		AC0EB6621E47850B001C54BD /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		AC0EB6631E47850B001C54BD /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		ACFC9D0E1E4900D40063B8DB /* SpaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceObject.h; sourceTree = "<group>"; };
+		ACFC9D0F1E4900D40063B8DB /* SpaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceObject.m; sourceTree = "<group>"; };
 		EC0806211E47962C00751355 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		EC0806221E47962C00751355 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		EC0806241E4797F300751355 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 			children = (
 				AC0EB6521E4768D1001C54BD /* LocalPlayer.h */,
 				AC0EB6531E4768D1001C54BD /* LocalPlayer.m */,
+				ACFC9D0E1E4900D40063B8DB /* SpaceObject.h */,
+				ACFC9D0F1E4900D40063B8DB /* SpaceObject.m */,
 				EC08062E1E47A95300751355 /* BaseShip.h */,
 				EC08062F1E47A95300751355 /* BaseShip.m */,
 				EC0806291E47A76500751355 /* EnemyShip.h */,
@@ -248,6 +253,7 @@
 				AC0EB6481E4765A1001C54BD /* MainMenuViewController.m in Sources */,
 				AC0EB6361E4761C4001C54BD /* BaseViewController.m in Sources */,
 				AC0EB6331E4761C4001C54BD /* AppDelegate.m in Sources */,
+				ACFC9D101E4900D40063B8DB /* SpaceObject.m in Sources */,
 				AC0EB6301E4761C4001C54BD /* main.m in Sources */,
 				EC08062B1E47A76500751355 /* EnemyShip.m in Sources */,
 				AC0EB65E1E476A5E001C54BD /* Bullet.m in Sources */,

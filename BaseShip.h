@@ -7,10 +7,10 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "SpaceObject.h"
 
-@interface BaseShip : SKSpriteNode
+@interface BaseShip : SpaceObject
 
 - (id)initWithPosition:(CGPoint)position;
-- (void)destroyed;
 
 @end

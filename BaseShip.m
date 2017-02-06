@@ -18,8 +18,4 @@
     return self;
 }
 
-- (void)destroyed {
-    [self removeFromParent];
-}
-
 @end
