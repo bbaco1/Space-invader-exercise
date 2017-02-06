@@ -9,5 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface Bullet : SKSpriteNode
+
 - (id)initWithPosition:(CGPoint)position;
+
 @end
