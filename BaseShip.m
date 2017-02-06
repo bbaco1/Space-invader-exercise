@@ -18,4 +18,8 @@
     return self;
 }
 
+- (void)destroyed {
+    [super destroyed];
+}
+
 @end

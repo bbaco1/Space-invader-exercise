@@ -24,7 +24,7 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    Bullet *bull = [[Bullet alloc]initWithPosition:self.position];
+    Bullet *bull = [[Bullet alloc] initWithPosition:self.position];
     [self.parent.scene addChild:bull];
 }
 

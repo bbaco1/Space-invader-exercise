@@ -7,7 +7,15 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "PlayerShip.h"
+
+typedef NS_ENUM(NSUInteger, SideMovement) {
+    MoveLeft,
+    MoveRight
+};
 
 @interface GameScene : SKScene <SKPhysicsContactDelegate>
+
+@property (strong, nonatomic) PlayerShip *playerShip;
 
 @end
