@@ -10,6 +10,6 @@
 
 @interface SpaceObject : SKSpriteNode
 
-- (void)destroyed;
+- (void)destroy;
 
 @end

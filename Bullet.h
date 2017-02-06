@@ -7,8 +7,9 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "SpaceObject.h"
 
-@interface Bullet : SKSpriteNode
+@interface Bullet : SpaceObject
 
 - (id)initWithPosition:(CGPoint)position;
 

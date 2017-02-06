@@ -8,6 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "PlayerShip.h"
+#import "Bullet.h"
 
 typedef NS_ENUM(NSUInteger, SideMovement) {
     MoveLeft,

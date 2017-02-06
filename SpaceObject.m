@@ -10,9 +10,8 @@
 
 @implementation SpaceObject
 
-- (void)destroyed {
+- (void)destroy {
     [self removeFromParent];
 }
-
 
 @end
