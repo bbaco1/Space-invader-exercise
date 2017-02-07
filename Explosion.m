@@ -16,6 +16,7 @@
             UIImage *pImage = [UIImage imageNamed:@"particle"];
             SKSpriteNode *particle = [[SKSpriteNode alloc]initWithTexture:[SKTexture textureWithImage:pImage]];
             particle.position = CGPointMake(position.x + cos(kut)*10, position.y + sin(kut)*10);
+            particle.name = @"particle";
             float sz = arc4random_uniform(10)+1;
             particle.size = CGSizeMake(sz, sz);
             particle.zPosition = 2;
