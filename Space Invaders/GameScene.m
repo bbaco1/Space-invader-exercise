@@ -31,6 +31,7 @@
     for(CGFloat y = 100; y>-100; y-=80) {
         for(int x = -width + 10; x<width-10; x+= 80) {
             EnemyShip *enemy = [[EnemyShip alloc] initWithPosition:CGPointMake(x, y)];
+            enemy.name = @"enemyShip";
             [self addChild:enemy];
         }
     }
@@ -42,13 +43,14 @@
 }
 
 - (void)didBeginContact:(SKPhysicsContact *)contact {
-    Bullet *node1 = (Bullet *) contact.bodyA.node;
+    EnemyShip *node1 = (EnemyShip *) contact.bodyA.node;
     Bullet *node2 = (Bullet *) contact.bodyB.node;
-    if([node1.name isEqualToString:@"bullet"]) {
+    if([node1.name isEqualToString:@"enemyShip"]) {
         [node1 destroy];
         [Explosion initWithPosition:contact.contactPoint secene:self];
         
-    } else if([node2.name isEqualToString:@"bullet"]) {
+    }
+    if([node2.name isEqualToString:@"bullet"]) {
         [node2 destroy];
         [Explosion initWithPosition:contact.contactPoint secene:self];
     }
