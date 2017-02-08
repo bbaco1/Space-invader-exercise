@@ -18,9 +18,4 @@
     return self;
 }
 
-- (void)destroy {
-    
-    [super destroy];
-}
-
 @end
