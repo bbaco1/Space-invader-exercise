@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  Space Invaders
+//
+//  Created by Milorad Orzes on 08/02/2017.
+//  Copyright © 2017 Milorad Orzes. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define IS_IPHONE4_SCREEN_SIZE ([[UIScreen mainScreen] bounds].size.height == 480)
+#define IS_IPHONE5_SCREEN_SIZE ([[UIScreen mainScreen] bounds].size.height <= 568)
+#define IS_IPHONE6_SCREEN_SIZE ([[UIScreen mainScreen] bounds].size.height == 667)
+#define IS_IPHONE6_PLUS_SCREEN_SIZE ([[UIScreen mainScreen] bounds].size.height >= 736)
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "BaseViewController.h"
+#import "LocalPlayer.h"
+
+#endif /* PrefixHeader_pch */

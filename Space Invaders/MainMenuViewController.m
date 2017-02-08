@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self.highScoreLabel setText:[NSString stringWithFormat:@"%@", [LocalPlayer sharedPlayer].highScore]];
 }
 

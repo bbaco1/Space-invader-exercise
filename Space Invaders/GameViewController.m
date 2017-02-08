@@ -33,6 +33,15 @@
     // Present the scene.
     [skView presentScene:gameScene];
     
+    if (IS_IPHONE4_SCREEN_SIZE) {
+        NSLog(@"This is an iphone 4 screen size");
+    } else if (IS_IPHONE5_SCREEN_SIZE) {
+        NSLog(@"This is an iphone 5 screen size");
+    } else if (IS_IPHONE6_SCREEN_SIZE) {
+        NSLog(@"This is an iphone 6 screen size");
+    } else if (IS_IPHONE6_PLUS_SCREEN_SIZE) {
+        NSLog(@"This is an iphone 6 plus screen size");
+    }
 }
 
 @end

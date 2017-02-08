@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
-#import "LocalPlayer.h"
-
 
 @interface MainMenuViewController : BaseViewController
 @property (weak, nonatomic) IBOutlet UILabel *highScoreLabel;
