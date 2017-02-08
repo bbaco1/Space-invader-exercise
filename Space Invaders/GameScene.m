@@ -77,5 +77,12 @@
     [object runAction:moveAction];
 }
 
+- (void)update:(NSTimeInterval)currentTime {
+    [self enumerateChildNodesWithName:@"particle" usingBlock:^(SKNode *node, BOOL *stop) {
+        if (node.position.y < -self.size.height/2) {
+            [node removeFromParent];
+        }
+    }];
+}
 
 @end
